@@ -600,7 +600,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('🔮 𝚂𝚃𝙰𝚃𝚄𝚂 🔮', callback_data='stats')
             ],[
-            InlineKeyboardButton('🚫 𝙲𝙻𝙾𝚂𝙴', callback_data='close_data'),
+            InlineKeyboardButton('❌ Cʟᴏsᴇ ❌', callback_data='close_data'),
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')           
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
@@ -616,7 +616,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🧑‍💻 Rᴇᴘᴏʀᴛ Bᴜɢ 🧑‍💻', url='https://t.me/Praxxsh')
             ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
-            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
+            InlineKeyboardButton('❌ Cʟᴏsᴇ ❌', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await query.edit_message_media(
@@ -625,13 +625,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('SOURCE CODE', url='https://github.com/MrMKN/PROFESSOR-BOT')
-            ],[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.edit_message_media(
             InputMediaPhoto(random.choice(PICS), script.SOURCE_TXT, enums.ParseMode.HTML),
+            reply_markup=reply_markup,            
+        )
+   elif query.data == "clone":
+        buttons = [[
+            InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Oᴡɴ Bᴏᴛ 🤖', url='https://github.com/MrMKN/PROFESSOR-BOT')
+            ],[
+            InlineKeyboardButton('👩‍🦯 Back', callback_data='about')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.edit_message_media(
+            InputMediaPhoto(random.choice(PICS), script.CLONE_TXT, enums.ParseMode.HTML),
             reply_markup=reply_markup,            
         )
     elif query.data == "restric":
