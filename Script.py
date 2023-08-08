@@ -1,23 +1,30 @@
 class script(object):   
-    HELP_TXT = """𝙷𝙴𝚈 {}\n𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
+    HELP_TXT = """Hᴇʏ {}\nHᴇʀᴇ ɪs Mʏ Hᴇʟᴘ Cᴏᴍᴍᴀɴᴅs."""
 
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : <a href=https://t.me/mr_MKN>𝙈𝙧.𝙈𝙆𝙉 𝙏𝙂</a>
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : 𝙼𝙾𝙽𝙶𝙾-𝙳𝙱
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁 : 𝙰𝙽𝚈𝚆𝙷𝙴𝚁𝙴
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: 𝙿𝚁𝙾𝙵𝙴𝚂𝚂𝙾𝚁-𝙱𝙾𝚃 𝚟3.0.0"""
+    ABOUT_TXT = """✯ Mʏ Nᴀᴍᴇ : {}
+✯ Cʀᴇᴀᴛᴏʀ : <a href=https://tg://settings>🅰︎🅳︎🅼︎🅸︎🅽︎</a>
+✯ Lɪʙʀᴀʀʏ : Pʏʀᴏɢʀᴀᴍ
+✯ Lᴀɴɢᴜᴀɢᴇ : Pʏᴛʜᴏɴ 𝟹
+✯ Dᴀᴛᴀ Bᴀsᴇ : Mᴏɴɢᴏ-ᴅʙ
+✯ Bᴏᴛ Sᴇʀᴠᴇʀ : Aɴʏᴡʜᴇʀᴇ
+✯ Bᴜɪʟᴅ Vᴇʀsɪᴏɴ : Bɪʟʟᴀ Fɪʟᴛᴇʀ-Bᴏᴛ 𝚟6.0.0"""
 
     SOURCE_TXT = """<b>NOTE:</b>
-- 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁 👉 :<a href=https://github.com/MrMKN/PROFESSOR-BOT>𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑-𝐁𝐎𝐓</a>
+- 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁 👉 :Sᴏʀʀʏ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ Oғ Tʜɪs Bᴏᴛ ɪs Pʀɪᴠᴀᴛᴇ Aᴅᴅ Tʜɪs Bᴏᴛ ɪɴ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Usᴇ Lɪᴋᴇ Yᴏᴜʀs<a href=https://t.me/Praxxsh>If you have any questions & doubts about using me contact support.</a>
 
-<b>DEVS:</b>
-- 𝙳𝚎𝚟 1<a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a>
-- 𝙳𝚎𝚟 2<a href=https://t.me/AboutAadhi>𝙰𝙰𝙳𝙷𝙸</a>"""
+<b>Bᴏᴛ Dᴇᴠᴇʟᴏᴘᴇʀ:</b>
+- Dᴇᴠᴇʟᴏᴘᴇʀ<a href=https://t.me/Praxxsh>A ᴅ ᴏ ʟ ғ 🔰 R ᴀ ᴍ</a>"""
 
     CLONE_TXT = """<b>NOTE:</b>
-  HERE I YOU CAN MAKE YOUR OWN BOT"""
+  👋 Hᴇʏ Tʜᴇʀᴇ...
+
+  🔰 𝙷𝙴𝚁𝙴 𝙸 𝚈𝙾𝚄 𝙲𝙰𝙽 𝙼𝙰𝙺𝙴 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽 𝙱𝙾𝚃
+
+  🔰 Iғ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀ ᴏᴡɴ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ ᴏʀ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʜᴏsᴛɪɴɢ sᴇʀᴠᴇʀ ᴛᴏ ʜᴏsᴛ ʏᴏᴜʀ ʙᴏᴛ? 
+
+  😥 Dᴏɴ'ᴛ Wᴏʀʀʏ!!! (ᴄʀᴇᴀᴛᴇ ᴀ ᴏᴡɴ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs ʙᴏᴛ)
+
+  💥 Tʜᴇɴ ʏᴏᴜ ᴄᴀɴ ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ʙᴏᴛ ᴜsɪɴɢ 🎭[/clone] ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴄᴜsᴛᴏᴍɪᴢᴇ ʏᴏᴜ ᴄʀᴇᴀᴛᴇᴅ ʙᴏᴛ ᴜsɪɴɢ sᴀᴍᴇ ᴄᴏᴍᴍᴀɴᴅ 🎭(/clone)"""
   
     FILE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
 
@@ -31,9 +38,9 @@ class script(object):
 
 ⪼ 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 ›
 
-<code>/batch https://t.me/mkn_bots_updates https://t.me/mkn_bots_updates</code>
+<code>/batch https://t.me/Movie_Requestgrp https://t.me/Movie_Requestgrp</code>
 
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/mkn_bots_updates><b>𝙼𝙺𝙽 𝙱𝙾𝚃𝚉</b></a>"""
+𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/Praxxsh><b>A ᴅ ᴏ ʟ ғ 🔰 R ᴀ ᴍ</b></a>"""
     
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
@@ -79,7 +86,7 @@ class script(object):
 ›› /set_template - 𝚂𝙴𝚃 𝙲𝚄𝚂𝚃𝙾𝙼 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙵𝙾𝚁 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁. 
 ›› /get_template - 𝙶𝙴𝚃 𝙲𝚄𝚁𝚁𝙴𝙽𝚃 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙾𝙵 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁.
 
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 :- <a href=https://t.me/mr_MKN>Mr.MKN TG</a>**"""
+𝙲𝚁𝙴𝙳𝙸𝚃𝚂 :- <a href=https://t.me/mr_MKN>A ᴅ ᴏ ʟ ғ 🔰 R ᴀ ᴍ</a>**"""
 
     CONNECTION_TXT = """Help: <b>Connections</b>
 
@@ -150,25 +157,25 @@ these are the extra features of this bot
 • /delallg - <code>ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀꜱ</code>
 """
 
-    STATUS_TXT = """<b>᚛› 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code></b>
-<b>᚛› 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code></b>
-<b>᚛› 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code></b>
-<b>᚛› 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝙱</b>
-<b>᚛› 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝙱</b>"""
+    STATUS_TXT = """<b>📑 Tᴏᴛᴀʟ Fɪʟᴇs:: <code>{}</code></b>
+<b>👤 Tᴏᴛᴀʟ Usᴇʀ:  <code>{}</code></b>
+<b>👥 Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code></b>
+<b>🗂️ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝙱</b>
+<b>🗄️ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝙱</b>"""
     LOG_TEXT_G = """#𝐍𝐞𝐰𝐆𝐫𝐨𝐮𝐩
     
-<b>᚛› 𝐆𝐫𝐨𝐮𝐩 ⪼ {a}(<code>{b}</code>)</b>
-<b>᚛› 𝐆 𝐈𝐃 ⪼ @{c}
-<b>᚛› 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 ⪼ {d}</b>
-<b>᚛› 𝐀𝐝𝐝𝐞𝐝 𝐁𝐲 ⪼ {e}</b>
+<b>👥 𝐆𝐫𝐨𝐮𝐩 ⪼ {a}(<code>{b}</code>)</b>
+<b>⚡️ 𝐆 𝐈𝐃 ⪼ @{c}
+<b>👤 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 ⪼ {d}</b>
+<b>🙎‍♂️ 𝐀𝐝𝐝𝐞𝐝 𝐁𝐲  ⪼ {e}</b>
 
 By {f}
 """
     LOG_TEXT_P = """#𝐍𝐞𝐰𝐔𝐬𝐞𝐫
     
-<b>᚛› 𝐈𝐃 - <code>{}</code></b>
-<b>᚛› 𝐍𝐚𝐦𝐞 - {}</b>
-<b>᚛› 𝐔𝐍 - @{}</b>
+<b>⚡️ 𝐈𝐃 - <code>{}</code></b>
+<b>⚡️ 𝐍𝐚𝐦𝐞 - {}</b>
+<b>⚡️ 𝐔𝐍 - @{}</b>
 
 By @{} """
    
@@ -333,11 +340,11 @@ Delete A Lot Of Messages From Groups!
 𝘠𝘰𝘶 𝘊𝘢𝘯 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘈𝘯𝘺 𝘝𝘪𝘥𝘦𝘰 𝘖𝘳 𝘈𝘶𝘥𝘪𝘰 𝘍𝘳𝘰𝘮 𝘠𝘰𝘶𝘵𝘶𝘣𝘦
 
 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
-• /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
+• /song ᴘʜᴏɴᴇ ʟᴀ ᴘᴇsᴀᴛʜᴀ ᴅᴀ ᴘᴏᴛᴀ 
 • /video or /mp4 𝘈𝘯𝘥 https://youtu.be/*****
 
 • 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
-<code>/song mkn</code>
+<code>/song ᴘʜᴏɴᴇ ʟᴀ ᴘᴇsᴀᴛʜᴀ ᴅᴀ ᴘᴏᴛᴀ sᴏɴɢ</code>
 <code>/mp4 https://youtu.be/*******</code>
 <code>/video https://youtu.be/*****</code>  """
 
