@@ -263,8 +263,8 @@ async def pm_spoll_choker(msg):
         return
     temp.PM_SPELL[str(msg.id)] = movielist
     btn = [[InlineKeyboardButton(text=movie.strip(), callback_data=f"pmspolling#{user}#{k}")] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'pmspolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn), quote=True)
+    btn.append([InlineKeyboardButton(text="❌ Close", callback_data=f'pmspolling#{user}#close_spellcheck')])
+    await msg.reply("<b>🧐 Find anything related to that\n👇Did you mean any one of these?👇</b>", reply_markup=InlineKeyboardMarkup(btn), quote=True)
 
 
 
