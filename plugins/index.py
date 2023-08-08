@@ -39,7 +39,7 @@ async def index_files(bot, query):
     await msg.edit(
         "Starting Indexing",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton('Cancel', callback_data='index_cancel')]]
+            [[InlineKeyboardButton('❌ Cancel', callback_data='index_cancel')]]
         )
     )
     try:
@@ -55,7 +55,7 @@ async def send_for_index(bot, message):
         regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
         match = regex.match(message.text)
         if not match:
-            return await message.reply('Invalid link')
+            return await message.reply('⚠️ Invalid link')
         chat_id = match.group(4)
         last_msg_id = int(match.group(5))
         if chat_id.isnumeric():
@@ -84,11 +84,11 @@ async def send_for_index(bot, message):
     if message.from_user.id in ADMINS:
         buttons = [
             [
-                InlineKeyboardButton('Yes',
+                InlineKeyboardButton('✅ Yes',
                                      callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')
             ],
             [
-                InlineKeyboardButton('close', callback_data='close_data'),
+                InlineKeyboardButton('❌ close', callback_data='close_data'),
             ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -105,11 +105,11 @@ async def send_for_index(bot, message):
         link = f"@{message.forward_from_chat.username}"
     buttons = [
         [
-            InlineKeyboardButton('Accept Index',
+            InlineKeyboardButton('✅ Accept Index',
                                  callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')
         ],
         [
-            InlineKeyboardButton('Reject Index',
+            InlineKeyboardButton('❌ Reject Index',
                                  callback_data=f'index#reject#{chat_id}#{message.id}#{message.from_user.id}'),
         ]
     ]
@@ -117,7 +117,7 @@ async def send_for_index(bot, message):
     await bot.send_message(LOG_CHANNEL,
                            f'#IndexRequest\n\nBy : {message.from_user.mention} (<code>{message.from_user.id}</code>)\nChat ID/ Username - <code> {chat_id}</code>\nLast Message ID - <code>{last_msg_id}</code>\nInviteLink - {link}',
                            reply_markup=reply_markup)
-    await message.reply('ThankYou For the Contribution, Wait For My Moderators to verify the files.')
+    await message.reply('🤝 ThankYou For the Contribution, Wait For My Moderators to verify the files.')
 
 
 @Client.on_message(filters.command('setskip') & filters.user(ADMINS))
@@ -128,10 +128,10 @@ async def set_skip_number(bot, message):
             skip = int(skip)
         except:
             return await message.reply("Skip number should be an integer.")
-        await message.reply(f"Successfully set SKIP number as {skip}")
+        await message.reply(f"✅ Successfully set SKIP number as {skip}")
         temp.CURRENT = int(skip)
     else:
-        await message.reply("Give me a skip number")
+        await message.reply("🚨 Give me a skip number")
 
 
 async def index_files_to_db(lst_msg_id, chat, msg, bot):
@@ -151,7 +151,7 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
                     break
                 current += 1
                 if current % 100 == 0:
-                    can = [[InlineKeyboardButton('Cancel', callback_data='index_cancel')]]
+                    can = [[InlineKeyboardButton('❌ Cancel', callback_data='index_cancel')]]
                     reply = InlineKeyboardMarkup(can)
                     try:
                         await msg.edit_text(text=f"Total messages fetched: <code>{current}</code>\nTotal messages saved: <code>{total_files}</code>\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>", reply_markup=reply)       
@@ -184,7 +184,7 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
             logger.exception(e)
             await msg.edit(f'Error: {e}')
         else:
-            await msg.edit(f'Succesfully saved <code>{total_files}</code> to dataBase!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>')
+            await msg.edit(f'✅ Succesfully saved <code>{total_files}</code> to dataBase!\n🎭 Duplicate Files Skipped: <code>{duplicate}</code>\n🗑️ Deleted Messages Skipped: <code>{deleted}</code>\n🎥 Non-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\n⚠️ Errors Occurred: <code>{errors}</code>')
 
 
 
