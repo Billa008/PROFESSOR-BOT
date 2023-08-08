@@ -634,7 +634,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
    elif query.data == "clone":
         buttons = [[
-            InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Oᴡɴ Bᴏᴛ 🤖', url='https://github.com/MrMKN/PROFESSOR-BOT')
+            InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Oᴡɴ Bᴏᴛ 🤖', url='https://t.me/Netaji_Botz/8')
             ],[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='about')
         ]]
