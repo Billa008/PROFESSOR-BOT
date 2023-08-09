@@ -2,7 +2,7 @@ class script(object):
     HELP_TXT = """Hᴇʏ {}\nHᴇʀᴇ ɪs Mʏ Hᴇʟᴘ Cᴏᴍᴍᴀɴᴅs."""
 
     ABOUT_TXT = """✯ Mʏ Nᴀᴍᴇ : {}
-✯ Cʀᴇᴀᴛᴏʀ : <a href=https://tg://settings>🅰︎🅳︎🅼︎🅸︎🅽︎</a>
+✯ Cʀᴇᴀᴛᴏʀ : <a href=tg://settings>🅰︎🅳︎🅼︎🅸︎🅽︎</a>
 ✯ Lɪʙʀᴀʀʏ : Pʏʀᴏɢʀᴀᴍ
 ✯ Lᴀɴɢᴜᴀɢᴇ : Pʏᴛʜᴏɴ 𝟹
 ✯ Dᴀᴛᴀ Bᴀsᴇ : Mᴏɴɢᴏ-ᴅʙ
