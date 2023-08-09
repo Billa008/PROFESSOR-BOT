@@ -572,31 +572,31 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('🚨 Exᴛʀᴀ Mᴏᴅs 🚨', callback_data='extra_mods')            
+            InlineKeyboardButton('🧩 Exᴛʀᴀ Mᴏᴅs 🧩', callback_data='extra_mods')            
             ],[
-            InlineKeyboardButton('🔰Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ🔰', callback_data='manuelfilter'),
-            InlineKeyboardButton('🔰Aᴜᴛᴏ Fɪʟᴛᴇʀ🔰', callback_data='autofilter'),
-            InlineKeyboardButton('🔰𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽𝚂🔰', callback_data='coct')
+            InlineKeyboardButton('Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('Aᴜᴛᴏ Fɪʟᴛᴇʀ', callback_data='autofilter'),
+            InlineKeyboardButton('𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽𝚂', callback_data='coct')
             ],[                       
-            InlineKeyboardButton('🔰𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷🔰', callback_data='tele'),
-            InlineKeyboardButton('🔰𝚂𝙷𝙰𝚁𝙴-𝚃𝙴𝚇𝚃🔰', callback_data='sharetxt'),
-            InlineKeyboardButton('🔰𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴🔰', callback_data='newdata')
+            InlineKeyboardButton('𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷', callback_data='tele'),
+            InlineKeyboardButton('𝚂𝙷𝙰𝚁𝙴-𝚃𝙴𝚇𝚃', callback_data='sharetxt'),
+            InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata')
             ],[           
-            InlineKeyboardButton('🔰Jsᴏɴᴇ🔰', callback_data='son'),
-            InlineKeyboardButton('🔰𝚃𝚃𝚂🔰', callback_data='ttss'),           
-            InlineKeyboardButton('🔰Pᴜʀɢᴇ🔰', callback_data='purges')
+            InlineKeyboardButton('Jsᴏɴᴇ', callback_data='son'),
+            InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss'),           
+            InlineKeyboardButton('Pᴜʀɢᴇ', callback_data='purges')
             ],[
-            InlineKeyboardButton('🔰𝙿𝙰𝚂𝚃𝙴🔰', callback_data='pastes'),
-            InlineKeyboardButton("🔰𝙸𝙼𝙰𝙶𝙴🔰", callback_data='image'),
-            InlineKeyboardButton('🔰𝙿𝙸𝙽𝙶🔰', callback_data='pings')                                   
+            InlineKeyboardButton('𝙿𝙰𝚂𝚃𝙴', callback_data='pastes'),
+            InlineKeyboardButton("𝙸𝙼𝙰𝙶𝙴", callback_data='image'),
+            InlineKeyboardButton('𝙿𝙸𝙽𝙶x', callback_data='pings')                                   
             ],[                               
-            InlineKeyboardButton('🔰𝙼𝚄𝚃𝙴🔰', callback_data='restric'),
-            InlineKeyboardButton('🔰𝙺𝙸𝙲𝙺🔰', callback_data='zombies'),
-            InlineKeyboardButton('🔰𝙿𝙸𝙽🔰', callback_data='pin')
+            InlineKeyboardButton('𝙼𝚄𝚃𝙴', callback_data='restric'),
+            InlineKeyboardButton('𝙺𝙸𝙲𝙺', callback_data='zombies'),
+            InlineKeyboardButton('𝙿𝙸𝙽', callback_data='pin')
             ],[
-            InlineKeyboardButton('🔰𝙲𝙰𝚁𝙱𝙾𝙽🔰', callback_data='carb'),
-            InlineKeyboardButton('🔰𝙵𝙾𝙽𝙳🔰', callback_data='fond'),
-            InlineKeyboardButton('🔰𝚈𝚃-𝙳𝙻🔰', callback_data='ytdl')
+            InlineKeyboardButton('𝙲𝙰𝚁𝙱𝙾𝙽', callback_data='carb'),
+            InlineKeyboardButton('𝙵𝙾𝙽𝙳', callback_data='fond'),
+            InlineKeyboardButton('𝚈𝚃-𝙳𝙻', callback_data='ytdl')
             ],[
             InlineKeyboardButton('📈 Sᴛᴀᴛᴜs 📈', callback_data='stats')
             ],[
