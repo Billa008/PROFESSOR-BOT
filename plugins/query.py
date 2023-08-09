@@ -902,7 +902,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await save_group_settings(grpid, set_type, True)
         settings = await get_settings(grpid)
         if settings is not None:
-            buttons = ],[            
+            buttons = [[            
             InlineKeyboardButton('Bᴜᴛᴛᴏɴ Sᴛʏʟᴇ', callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
             InlineKeyboardButton('Sɪɴɢʟᴇ' if settings["button"] else 'Dᴏᴜʙʟᴇ',  callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
             ],[
