@@ -919,11 +919,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✅ Yᴇs' if settings["spell_check"] else '🚫 Nᴏ', callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
             ],[
             InlineKeyboardButton('Wᴇʟᴄᴏᴍᴇ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-            InlineKeyboardButton('✅ Yᴇs' if settings["welcome"] else '🚫 Nᴏ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
-            ],[
-            InlineKeyboardButton('Sʜᴏʀᴛʟɪɴᴋ', callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-            InlineKeyboardButton('✅ Yᴇs' if settings["is_shortlink"] else '🚫 Nᴏ', callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')   
-        ]]
+            InlineKeyboardButton('✅ Yᴇs' if settings["welcome"] else '🚫 Nᴏ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')     
+            ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
 
