@@ -10,7 +10,7 @@ class script(object):
 ✯ Bᴜɪʟᴅ Vᴇʀsɪᴏɴ : Bɪʟʟᴀ Fɪʟᴛᴇʀ-Bᴏᴛ 𝚟6.0.0"""
 
     SOURCE_TXT = """<b>NOTE:</b>
-- 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 👉 :Sᴏʀʀʏ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ Oғ Tʜɪs Bᴏᴛ ɪs Pʀɪᴠᴀᴛᴇ Aᴅᴅ Tʜɪs Bᴏᴛ ɪɴ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Usᴇ Lɪᴋᴇ Yᴏᴜʀs<a href=https://t.me/Praxxsh>If you have any questions & doubts about using me contact support.</a>
+- Nᴏᴛᴇ 👉 :Sᴏʀʀʏ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ Oғ Tʜɪs Bᴏᴛ ɪs Pʀɪᴠᴀᴛᴇ Aᴅᴅ Tʜɪs Bᴏᴛ ɪɴ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Usᴇ Lɪᴋᴇ Yᴏᴜʀs<a href=https://t.me/Praxxsh>If you have any questions & doubts about using me contact support.</a>
 
 <b>Bᴏᴛ Dᴇᴠᴇʟᴏᴘᴇʀ:</b>
 - Dᴇᴠᴇʟᴏᴘᴇʀ<a href=https://t.me/Praxxsh>A ᴅ ᴏ ʟ ғ 🔰 R ᴀ ᴍ</a>"""
