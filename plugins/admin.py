@@ -18,12 +18,13 @@ async def stats(bot, update):
 
     ms_g = f"""<b><u>Bot Status</b></u>
 
-Uptime: <code>{currentTime}</code>
-CPU Usage: <code>{cpu_usage}%</code>
-RAM Usage: <code>{ram_usage}%</code>
-Total Disk Space: <code>{total}</code>
-Used Space: <code>{used} ({disk_usage}%)</code>
-Free Space: <code>{free}</code> """
+⚡ Uᴘᴛɪᴍᴇ: <code>{currentTime}</code>
+⚡ CPU Usᴀɢᴇ: <code>{cpu_usage}%</code>
+⚡ RAM Usᴀɢᴇ: <code>{ram_usage}%</code>
+⚡ Tᴏᴛᴀʟ Dɪsᴋ Sᴘᴀᴄᴇ: <code>{total}</code>
+⚡ Usᴇᴅ Sᴘᴀᴄᴇ: <code>{used} ({disk_usage}%)</code>
+⚡ Fʀᴇᴇ Sᴘᴀᴄᴇ: <code>{free}</code>
+⚡ Tᴏᴛᴀʟ Bᴏᴛs: <code>18</code> """
 
     msg = await bot.send_message(chat_id=update.chat.id, text="__Processing...__", parse_mode=enums.ParseMode.MARKDOWN)         
     await msg.edit_text(text=ms_g, parse_mode=enums.ParseMode.HTML)
