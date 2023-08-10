@@ -174,11 +174,7 @@ these are the extra features of this bot
 <b>👤 Tᴏᴛᴀʟ Usᴇʀ:  <code>{}</code></b>
 <b>👥 Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code></b>
 <b>🗂️ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝙱</b>
-<b>🗄️ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝙱</b>
-<b>⌚ Uᴘᴛɪᴍᴇ:</b> <code>{currentTime}</code>
-<b>💻 CPU Usᴀɢᴇ:</b> <code>{cpu_usage}%</code>
-<b>🏃‍♂️ RAM Usᴀɢᴇ:</b> <code>{ram_usage}%</code>
-<b>🤖 Tᴏᴛᴀʟ Bᴏᴛs:</b> <code>18</code>"""
+<b>🗄️ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code> 𝙼𝙱</b>"""
     LOG_TEXT_G = """#𝐍𝐞𝐰𝐆𝐫𝐨𝐮𝐩
     
 <b>👥 𝐆𝐫𝐨𝐮𝐩 ⪼ {a}(<code>{b}</code>)</b>
