@@ -132,6 +132,24 @@ async def deletegfilter(client, message):
     await delete_gfilter(message, query, 'gfilters')
 
 
+@Client.on_message(filters.command('clone') & filters.incoming & filters.user(ADMINS))
+async def deletegfilter(client, message):
+    try:
+        cmd, text = message.text.split(" ", 1)
+    except:
+        await message.reply_text(
+            "<b>Cʟᴏɴᴇ Mᴏᴅᴇ ɪs Uɴᴅᴇʀᴍᴀɪɴᴛᴀɴᴄᴇ 🤖!</b>\n\n"
+            "<code>/clone [bot token]</code>\n\n"
+            "Use /mybots to view number of bot available",
+            quote=True
+        )
+        return
+
+    query = text.lower()
+
+    await delete_gfilter(message, query, 'gfilters')
+
+
 @Client.on_message(filters.command('delallg') & filters.user(ADMINS))
 async def delallgfill(client, message):
     await message.reply_text(
