@@ -138,7 +138,10 @@ async def deletegfilter(client, message):
         cmd, text = message.text.split(" ", 1)
     except:
         await message.reply_text(
-            "<b>Cʟᴏɴᴇ Mᴏᴅᴇ ɪs Uɴᴅᴇʀᴍᴀɪɴᴛᴀɴᴄᴇ 🤖!</b>\n\n"
+            "<b>1) Send /newbot to @BotFather</b>\n\n"
+            "<b>2) Give a name for your bot.</b>\n\n"
+            "<b>3) Give a unique username.</b>\n\n"
+            "<b>4) Then you will get a message with your bot token.</b>\n\n"
             "<code>/clone [bot token]</code>\n\n"
             "Use /mybots to view number of bot available",
             quote=True
