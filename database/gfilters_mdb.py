@@ -76,7 +76,7 @@ async def delete_gfilter(message, text, gfilters):
             parse_mode=enums.ParseMode.MARKDOWN
         )
     else:
-        await message.reply_text("Couldn't find that gfilter!", quote=True)
+        await message.reply_text("Sᴏʀʀʏ, Sᴏᴍᴇᴛʜɪɴɢ Wᴇɴᴛ Wʀᴏɴɢ Pʟᴇᴀsᴇ Tʀʏ Lᴀᴛᴇʀ!", quote=True)
 
 async def del_allg(message, gfilters):
     if str(gfilters) not in mydb.list_collection_names():
@@ -88,7 +88,7 @@ async def del_allg(message, gfilters):
         mycol.drop()
         await message.edit_text(f"All filters has been removed")
     except:
-        await message.edit_text("Couldn't remove all filters!")
+        await message.edit_text("Sᴏʀʀʏ, Sᴏᴍᴇᴛʜɪɴɢ Wᴇɴᴛ Wʀᴏɴɢ Pʟᴇᴀsᴇ Tʀʏ Lᴀᴛᴇʀ!")
         return
 
 async def count_gfilters(gfilters):
