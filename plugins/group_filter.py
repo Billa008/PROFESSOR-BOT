@@ -120,14 +120,14 @@ async def next_page(bot, query):
                                   callback_data="pages")]
         )
         btn.append(
-                [InlineKeyboardButton(text="⭕️ ℂℍ𝔼ℂ𝕂 ℙ𝕄 ⭕️", url=f"https://telegram.dog/{temp.U_NAME}")]
+                [InlineKeyboardButton(text="🤖 Cʜᴇᴄᴋ Pᴍ 🤖", url=f"https://telegram.dog/{temp.U_NAME}")]
             )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("𝗡𝗘𝗫𝗧 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
         btn.append(
-                [InlineKeyboardButton(text="⭕️ ℂℍ𝔼ℂ𝕂 ℙ𝕄 ⭕️", url=f"https://telegram.dog/{temp.U_NAME}")]
+                [InlineKeyboardButton(text="🤖 Cʜᴇᴄᴋ Pᴍ 🤖", url=f"https://telegram.dog/{temp.U_NAME}")]
             )
     else:
         btn.append(
@@ -138,7 +138,7 @@ async def next_page(bot, query):
             ],
         )
         btn.append(
-                [InlineKeyboardButton(text="⭕️ ℂℍ𝔼ℂ𝕂 ℙ𝕄 ⭕️", url=f"https://telegram.dog/{temp.U_NAME}")]
+                [InlineKeyboardButton(text="🤖 Cʜᴇᴄᴋ Pᴍ 🤖", url=f"https://telegram.dog/{temp.U_NAME}")]
             )
     
     try:
@@ -239,7 +239,7 @@ async def auto_filter(client, msg, spoll=False):
         temp.GP_BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text="⭕️ ℂℍ𝔼ℂ𝕂 ℙ𝕄 ⭕️", url=f"https://telegram.dog/{temp.U_NAME}")]
+            [InlineKeyboardButton(text="🤖 Cʜᴇᴄᴋ Pᴍ 🤖", url=f"https://telegram.dog/{temp.U_NAME}")]
             )
         btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
@@ -247,7 +247,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-                [InlineKeyboardButton(text="⭕️ ℂℍ𝔼ℂ𝕂 ℙ𝕄 ⭕️", url=f"https://telegram.dog/{temp.U_NAME}")]
+                [InlineKeyboardButton(text="🤖 Cʜᴇᴄᴋ Pᴍ 🤖", url=f"https://telegram.dog/{temp.U_NAME}")]
             )
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
