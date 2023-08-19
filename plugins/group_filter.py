@@ -299,17 +299,15 @@ async def auto_filter(client, msg, spoll=False):
             await hmm.delete()            
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_photo(photo="https://graph.org/file/668fa73da0299bc909724.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(60)
-            await fek.delete()
-            await msg.delete()
+            cdb = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(IMDB_DELET_TIME)
+            await cdb.delete()
     else:
-        fuk = await message.reply_photo(photo="https://graph.org/file/668fa73da0299bc909724.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(60)
-        await fuk.edit(f"\n \n⚙️ {message.from_user.mention}'s Result For **{search}**  Closed ️")
+        crl = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        await asyncio.sleep(IMDB_DELET_TIME)
+        await crl.delete()        
     if spoll:
-        await msg.message.edit(f"\n \n⚙️ Result  Closed ️")
-
+        await msg.message.delete()
 
 async def advantage_spell_chok(msg):
     query = re.sub(
