@@ -513,7 +513,12 @@ async def send_chatmsg(bot, message):
     else:
         await message.reply_text("<b>Cᴏᴍᴍᴀɴᴅ Iɴᴄᴏᴍᴘʟᴇᴛᴇ...</b>")
 
-
+@Client.on_message(filters.command('clone'))
+async def clone(client, message):
+    msg = await bot.send_message(text="**⏩ ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏᴋᴇɴ ғʀᴏᴍ ʙᴏᴛ ғᴀᴛʜᴇʀ (with tag)...**", chat_id=message.chat.id)       
+    await asyncio.sleep(3)
+    await msg.edit("**⚠️ OPPS ERROR OCCURRED PLEASE TRY AGAIN LATER**")
+    os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
