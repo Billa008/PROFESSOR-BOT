@@ -570,31 +570,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS), "Select your required mode from below!"),
             reply_markup=reply_markup,           
         )
-    elif query.data == "help":
+    elif query.data == "extra_mod":
         buttons = [[
             InlineKeyboardButton('🧩 Exᴛʀᴀ Mᴏᴅs 🧩', callback_data='extra_mods')            
             ],[
             InlineKeyboardButton('Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ', callback_data='manuelfilter'),
-            InlineKeyboardButton('Aᴜᴛᴏ Fɪʟᴛᴇʀ', callback_data='autofilter'),
-            InlineKeyboardButton('𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽𝚂', callback_data='coct')
-            ],[                       
-            InlineKeyboardButton('𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷', callback_data='tele'),
-            InlineKeyboardButton('𝚂𝙷𝙰𝚁𝙴-𝚃𝙴𝚇𝚃', callback_data='sharetxt'),
-            InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata')
-            ],[           
-            InlineKeyboardButton('Jsᴏɴᴇ', callback_data='son'),
-            InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss'),           
-            InlineKeyboardButton('Pᴜʀɢᴇ', callback_data='purges')
-            ],[
-            InlineKeyboardButton('𝙿𝙰𝚂𝚃𝙴', callback_data='pastes'),
-            InlineKeyboardButton("𝙸𝙼𝙰𝙶𝙴", callback_data='image'),
-            InlineKeyboardButton('𝙿𝙸𝙽𝙶x', callback_data='pings')                                   
-            ],[                               
+            InlineKeyboardButton('Aᴜᴛᴏ Fɪʟᴛᴇʀ', callback_data='autofilter')
+            ],[                                                          
             InlineKeyboardButton('𝙼𝚄𝚃𝙴', callback_data='restric'),
-            InlineKeyboardButton('𝙺𝙸𝙲𝙺', callback_data='zombies'),
-            InlineKeyboardButton('𝙿𝙸𝙽', callback_data='pin')
+            InlineKeyboardButton('𝙺𝙸𝙲𝙺', callback_data='zombies')
             ],[
-            InlineKeyboardButton('𝙲𝙰𝚁𝙱𝙾𝙽', callback_data='carb'),
             InlineKeyboardButton('𝙵𝙾𝙽𝙳', callback_data='fond'),
             InlineKeyboardButton('𝚈𝚃-𝙳𝙻', callback_data='ytdl')
             ],[
@@ -632,7 +617,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "clone":
         buttons = [[
-            InlineKeyboardButton('🤖 Bᴏᴛ Fᴇᴀᴛᴜʀᴇs 🤖', url='https://t.me/Netaji_Botz/8')
+            InlineKeyboardButton('🤖 Bᴏᴛ Fᴇᴀᴛᴜʀᴇs 🤖', url='https://t.me/Doremon_Botz')
             ],[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='about')
         ]]
@@ -797,15 +782,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS), script.SHORT_LINK, enums.ParseMode.HTML),
             reply_markup=reply_markup,
         )    
-    elif query.data == "extra_mods":
+    elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('🎭 Cʟᴏɴᴇ 🎭', callback_data='clone'),
             InlineKeyboardButton('💸 Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data='shortlink')
             ],[
+            InlineKeyboardButton('Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('Aᴜᴛᴏ Fɪʟᴛᴇʀ', callback_data='autofilter')
+            ],[
             InlineKeyboardButton('Gʟᴏʙᴀʟ Fɪʟᴛᴇʀ', callback_data='gfill'),
             InlineKeyboardButton('Usᴇʀ & Cʜᴀᴛ', callback_data='uschat')
             ],[
-            InlineKeyboardButton('🔙 𝙱𝙰𝙲𝙺', callback_data='help')
+            ],[
+            InlineKeyboardButton('📈 Sᴛᴀᴛᴜs 📈', callback_data='stats')
+            ],[
+            InlineKeyboardButton('❌ Cʟᴏsᴇ ❌', callback_data='close_data'),
+            InlineKeyboardButton('🏠 Hᴏᴍᴇ 🏠', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         if query.from_user.id in ADMINS:
